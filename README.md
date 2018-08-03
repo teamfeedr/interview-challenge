@@ -9,7 +9,7 @@ If you are applying for a frontend role, please complete `README-FRONTEND.md`.
 
 If you are applying for a full stack role, please complete both `README-FRONTEND.md`, and `README-FULLSTACK.md`.
 
-Each part should take 1-2 hours each depending on experience.
+Each part should take 1-2 hours depending on experience.
 
 If you have any questions or would like to clarify any details, please email ash@teamfeedr.com.
 
