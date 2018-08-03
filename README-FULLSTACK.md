@@ -15,6 +15,7 @@ have for that day. See the examples at the bottom of this doc for further contex
 Design a REST API and database schema which reflects the following spec:
 
 Users can:
+
 - Be allocated days of the week they are allowed to order food (eg. Monday, Thursday).
 - Top up their credits.
 - Purchase items for days they are allowed to order (which will deduct their credit balance by the price of the item).
