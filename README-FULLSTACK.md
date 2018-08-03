@@ -17,6 +17,7 @@ Design a REST API and database schema which reflects the following spec:
 Users can:
 
 - Be allocated days of the week they are allowed to order food (eg. Monday, Thursday).
+- Be allocated subsidies described above.
 - Top up their credits.
 - Purchase items for days they are allowed to order (which will deduct their credit balance by the price of the item).
 - See their balance, and the total subsidy available to spend each day.
