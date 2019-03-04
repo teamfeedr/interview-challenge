@@ -12,7 +12,7 @@ Users credits can also be subsidised in any combination (or none) of the followi
 On any given day a user's balance should reflect the amount of credits they've purchased plus any subsidies they may
 have for that day. See the examples at the bottom of this doc for further context. 
 
-Design a REST API and database schema which reflects the following spec:
+Design a REST API and SQLdatabase schema which reflects the following spec:
 
 Users can:
 
@@ -37,7 +37,7 @@ You do not need to worry about validation or payment processing.
 You do not need to build the API or database or even write any code. A well-communicated, qualitative answer is all
 that is needed. Code samples are welcome if you feel they will be helpful.
 
-If you have any questions or would like to clarify any details, please email ash@teamfeedr.com.
+If you have any questions or would like to clarify any details, please email lyz@feedr.co.
 
 Good luck!
 
