@@ -8,7 +8,7 @@ If you are applying for a frontend role please complete `README-FRONTEND.md`.
 
 If you are applying for a full stack role please complete both `README-FRONTEND.md` and `README-FULLSTACK.md`.
 
-Plesse spend no longer than 1 - 2 hours on each challenge.
+Please spend no longer than 1 - 2 hours on each challenge.
 
 If you have any questions or would like to clarify any details, please email lyz@feedr.co.
 
