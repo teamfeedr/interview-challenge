@@ -41,7 +41,7 @@ If you have any questions or would like to clarify any details, please email ash
 
 Good luck!
 
-## Examples
+## Examples
 
 - User A is allowed a 3 credit subsidy to spend every Monday and can only order food on Mondays.
 - User B is allowed a 15 credit subsidy to spend every week, a 10 credit subsidy to spend every Friday, and can order food Monday-Friday.
