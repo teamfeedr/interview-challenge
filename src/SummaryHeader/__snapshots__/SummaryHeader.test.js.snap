@@ -20,7 +20,41 @@ exports[`SummaryHeader should render correctly 1`] = `
       </div>
       <div
         className="col-6 menu-summary-right"
-      />
+      >
+        <span
+          key="v"
+        >
+          2
+          x 
+          <span
+            className="dietary"
+          >
+            v
+          </span>
+        </span>
+        <span
+          key="ve"
+        >
+          1
+          x 
+          <span
+            className="dietary"
+          >
+            ve
+          </span>
+        </span>
+        <span
+          key="rsf"
+        >
+          2
+          x 
+          <span
+            className="dietary"
+          >
+            rsf
+          </span>
+        </span>
+      </div>
     </div>
   </div>
 </div>

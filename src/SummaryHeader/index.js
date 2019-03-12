@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Item from '../Item';
@@ -27,9 +27,9 @@ class SummaryHeader extends Component {
       const dietaryCount = counts[dietaryName];
 
       return (
-        <Fragment key={dietaryName}>
+        <span key={dietaryName}>
           {dietaryCount}x <span className="dietary">{dietaryName}</span>
-        </Fragment>
+        </span>
       )
     })
   }

@@ -4,7 +4,9 @@ exports[`App renders correctly 1`] = `
 <div
   className="wrapper"
 >
-  <SummaryHeader />
+  <SummaryHeader
+    items={Array []}
+  />
   <div
     className="container menu-builder"
   >
