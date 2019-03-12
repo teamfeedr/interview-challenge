@@ -5,21 +5,36 @@ exports[`Item should render correctly 1`] = `
   className="item"
 >
   <h2>
-    Dummy item
+    Kale Caesar Pasta, Turmeric Satay Broccoli & Lemon Cashew Greens
   </h2>
   <p>
     <span
       className="dietary"
-    >
-      ve
-    </span>
-    <span
-      className="dietary"
+      key="v"
     >
       v
     </span>
     <span
       className="dietary"
+      key="ve"
+    >
+      ve
+    </span>
+    <span
+      className="dietary"
+      key="df"
+    >
+      df
+    </span>
+    <span
+      className="dietary"
+      key="gf"
+    >
+      gf
+    </span>
+    <span
+      className="dietary"
+      key="n!"
     >
       n!
     </span>

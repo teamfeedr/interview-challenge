@@ -7,7 +7,7 @@ const Items = (props) => {
   return (
     <div className="col-4">
       <ul className="item-picker">
-        {props.items.map(item => <Item key={item.id} />)}
+        {props.items.map(item => <Item key={item.id} {...item} />)}
       </ul>
     </div>
   );
@@ -15,11 +15,7 @@ const Items = (props) => {
 
 Items.propTypes = {
   items: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
-      dietaries: PropTypes.arrayOf(PropTypes.string).isRequired,
-    })
+    PropTypes.shape(Item.propTypes)
   ),
 };
 

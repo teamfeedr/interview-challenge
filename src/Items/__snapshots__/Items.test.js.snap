@@ -8,7 +8,18 @@ exports[`Items should render correctly 1`] = `
     className="item-picker"
   >
     <Item
+      dietaries={
+        Array [
+          "v",
+          "ve",
+          "df",
+          "gf",
+          "n!",
+        ]
+      }
+      id={1001}
       key="1001"
+      name="Kale Caesar Pasta, Turmeric Satay Broccoli & Lemon Cashew Greens"
     />
   </ul>
 </div>

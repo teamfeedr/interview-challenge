@@ -23,7 +23,7 @@ describe('Items', () => {
     expect(render()).toMatchSnapshot();
   });
 
-  it('should render list of items from data prop', () => {
+  it('should render list of items from data prop and pass props to each', () => {
     const mockItems = [
       {
         id: 1002,
@@ -49,7 +49,11 @@ describe('Items', () => {
     const component = render({
       items: mockItems,
     });
+    const items = component.find('Item');
 
-    expect(component.find('Item')).toHaveLength(mockItems.length);
+    expect(items).toHaveLength(mockItems.length);
+    items.forEach((itemComponent, itemIndex) => {
+      expect(itemComponent.props()).toEqual(mockItems[itemIndex]);
+    });
   });
 });
