@@ -14,31 +14,13 @@ exports[`SummaryHeader should render correctly 1`] = `
         className="col-6 menu-summary-left"
       >
         <span>
-          5 items
+          4
+           items
         </span>
       </div>
       <div
         className="col-6 menu-summary-right"
-      >
-        6x 
-        <span
-          className="dietary"
-        >
-          ve
-        </span>
-        4x 
-        <span
-          className="dietary"
-        >
-          v
-        </span>
-        12x 
-        <span
-          className="dietary"
-        >
-          n!
-        </span>
-      </div>
+      />
     </div>
   </div>
 </div>
