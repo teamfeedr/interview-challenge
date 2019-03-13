@@ -1,7 +1,9 @@
 require('./test-setup');
 
 import React from 'react';
-import App from './App';
+import {
+  App
+} from './App';
 
 import { shallow } from 'enzyme';
 
