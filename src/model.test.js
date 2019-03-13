@@ -49,4 +49,16 @@ describe('ItemsStore', () => {
       mockItems[0]
     ]);
   });
+
+  it('removes item from preview', () => {
+    store.addToPreview(mockItems[0].id);
+    store.addToPreview(mockItems[1].id);
+    store.addToPreview(mockItems[2].id);
+    store.removePreviewItem(mockItems[1].id);
+
+    expect(store.preview).toEqual([
+      mockItems[0].id,
+      mockItems[2].id
+    ]);
+  });
 });

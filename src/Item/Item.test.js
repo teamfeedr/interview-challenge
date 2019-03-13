@@ -19,22 +19,25 @@ describe('Item', () => {
     expect(render()).toMatchSnapshot();
   });
 
-  it('should render remove button if `isRemovable` prop is set', () => {
+  it('should render remove button if `onRemove` callback prop is set', () => {
     expect(render({
-      isRemovable: true,
+      onRemove: _ => _,
     }).find('button')).toHaveLength(1);
   });
 
-  it('should call remove callback when remove button is clicked', () => {
+  it('should call remove callback and pass item object when remove button is clicked', () => {
     const mockCallback = jest.fn();
     const item = render({
       isRemovable: true,
       onRemove: mockCallback,
     });
 
-    item.find('button').simulate('click');
+    item.find('button').simulate('click', {
+      stopPropagation: _ => _,
+    });
 
     expect(mockCallback).toHaveBeenCalledTimes(1);
+    expect(mockCallback).toHaveBeenCalledWith(initProps);
   });
 
   it('should call `onClick` callback prop when clicked and pass item as argument', () => {
@@ -47,5 +50,11 @@ describe('Item', () => {
 
     expect(mockCallback).toHaveBeenCalledTimes(1);
     expect(mockCallback).toHaveBeenCalledWith(initProps);
+  });
+
+  it('should not call `onClick` callback prop if none is passed', () => {
+    const item = render();
+
+    expect(() => item.simulate('click')).not.toThrow();
   });
 });

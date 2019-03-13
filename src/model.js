@@ -25,6 +25,9 @@ const ItemsModel = types
       }
 
       self.preview.push(itemId);
+    },
+    removePreviewItem: (itemId) => {
+      self.preview = self.preview.filter(id => itemId !== id);
     }
   }));
 
