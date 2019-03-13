@@ -11,6 +11,13 @@ const ItemsModel = types
     items: types.array(ItemModel),
     preview: types.array(types.number),
   })
+  .views(self => ({
+    get previewItems() {
+      return self.items.filter(item => {
+        return self.preview.indexOf(item.id) !== -1;
+      });
+    }
+  }))
   .actions(self => ({
     addToPreview: (itemId) => {
       if (self.preview.indexOf(itemId) !== -1) {

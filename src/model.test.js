@@ -2,36 +2,35 @@ import ItemsStore from './model';
 
 describe('ItemsStore', () => {
   let store;
+  const mockItems = [
+    {
+      id: 1002,
+      name: 'Hake & Smoky Chickpeas, Brown Rice & Quinoa, Roasted Roots',
+      dietaries: ['v', 've', 'rsfa'],
+    },
+    {
+      id: 1003,
+      name: 'Dill & Swiss Chard Potato Cakes, Summer Tabbouleh & Roasted Roots',
+      dietaries: ['v', 've'],
+    },
+    {
+      id: 1004,
+      name: 'Hake & Smoky Chickpeas, Herby Potatoes & Turmeric Satay Broccoli',
+      dietaries: ['rsf'],
+    },
+  ];
 
   beforeEach(() => {
     store = ItemsStore.create({
-      items: [
-        {
-          id: 1002,
-          name: 'Hake & Smoky Chickpeas, Brown Rice & Quinoa, Roasted Roots',
-          dietaries: ['v', 've', 'rsfa'],
-        },
-        {
-          id: 1003,
-          name: 'Dill & Swiss Chard Potato Cakes, Summer Tabbouleh & Roasted Roots',
-          dietaries: ['v', 've'],
-        },
-        {
-          id: 1004,
-          name: 'Hake & Smoky Chickpeas, Herby Potatoes & Turmeric Satay Broccoli',
-          dietaries: ['rsf'],
-        },
-      ],
+      items: mockItems,
       preview: [],
     });
   });
 
   it('adds item to preview', () => {
-    const itemId = 5132;
+    store.addToPreview(mockItems[1].id);
 
-    store.addToPreview(itemId);
-
-    expect(store.preview).toContain(itemId);
+    expect(store.preview).toContain(mockItems[1].id);
   });
 
   it('adds item to preview once', () => {
@@ -41,5 +40,13 @@ describe('ItemsStore', () => {
     store.addToPreview(itemId);
 
     expect(store.preview).toEqual([itemId]);
+  });
+
+  it('gets items in preview', () => {
+    store.addToPreview(mockItems[0].id);
+
+    expect(store.previewItems).toEqual([
+      mockItems[0]
+    ]);
   });
 });

@@ -11,7 +11,7 @@ class SummaryHeader extends Component {
   getDietaryCounts() {
     const dietaries = {};
 
-    this.props.items.forEach(item => {
+    this.props.previewItems.forEach(item => {
       item.dietaries.forEach(dietaryItem => {
         if (dietaries[dietaryItem] === undefined) {
           dietaries[dietaryItem] = 1;
@@ -44,7 +44,7 @@ class SummaryHeader extends Component {
         <div className="container">
           <div className="row">
             <div className="col-6 menu-summary-left">
-              <span>{this.props.items.length} items</span>
+              <span>{this.props.previewItems.length} items</span>
             </div>
 
             <div className="col-6 menu-summary-right">
@@ -58,17 +58,17 @@ class SummaryHeader extends Component {
 }
 
 SummaryHeader.defaultProps = {
-  items: [],
+  previewItems: [],
 }
 
 SummaryHeader.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.shape(Item.propTypes)),
+  previewItems: PropTypes.arrayOf(PropTypes.shape(Item.propTypes)),
 }
 
 export default inject(({
-  itemsStore: { items }
+  itemsStore: { previewItems }
 }) => {
   return {
-    items,
+    previewItems,
   };
 })(observer(SummaryHeader));
