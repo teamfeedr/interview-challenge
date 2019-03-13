@@ -24,7 +24,7 @@ exports[`SummaryHeader should render correctly 1`] = `
         <span
           key="v"
         >
-          2
+          3
           x 
           <span
             className="dietary"
@@ -35,7 +35,7 @@ exports[`SummaryHeader should render correctly 1`] = `
         <span
           key="ve"
         >
-          1
+          2
           x 
           <span
             className="dietary"
@@ -46,7 +46,7 @@ exports[`SummaryHeader should render correctly 1`] = `
         <span
           key="rsf"
         >
-          2
+          3
           x 
           <span
             className="dietary"

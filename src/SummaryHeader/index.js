@@ -14,7 +14,7 @@ class SummaryHeader extends Component {
     this.props.items.forEach(item => {
       item.dietaries.forEach(dietaryItem => {
         if (dietaries[dietaryItem] === undefined) {
-          dietaries[dietaryItem] = 0;
+          dietaries[dietaryItem] = 1;
         } else {
           dietaries[dietaryItem] += 1;
         }
