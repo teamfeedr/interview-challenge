@@ -14,3 +14,4 @@ I usually use `babel-plugin-proposal-class-properties` but skipped it so I don't
 Improvements:
 - Could use `Array.prototype.reduce` to make the logic that counts the dietary types more functional
 - Would tidy up the folder structure a bit. For example, store model and App are not in separate folders.
+- Make the top left count copy singular and plural depending on count.
