@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import {
+  inject,
+  observer,
+} from 'mobx-react';
 
 import Item from '../Item';
 
@@ -61,4 +65,10 @@ SummaryHeader.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape(Item.propTypes)),
 }
 
-export default SummaryHeader;
+export default inject(({
+  itemsStore: { items }
+}) => {
+  return {
+    items,
+  };
+})(observer(SummaryHeader));

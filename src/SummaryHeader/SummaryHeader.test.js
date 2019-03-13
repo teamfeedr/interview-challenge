@@ -33,7 +33,7 @@ describe('SummaryHeader', () => {
   };
 
   beforeAll(() => {
-    render = createRenderer(SummaryHeader, initProps);
+    render = createRenderer(SummaryHeader.wrappedComponent, initProps);
   });
 
   it('should render correctly', () => {
