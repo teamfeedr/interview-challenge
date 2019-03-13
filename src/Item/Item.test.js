@@ -37,7 +37,7 @@ describe('Item', () => {
     expect(mockCallback).toHaveBeenCalledTimes(1);
   });
 
-  it('should call `onClick` callback prop when clicked', () => {
+  it('should call `onClick` callback prop when clicked and pass item as argument', () => {
     const mockCallback = jest.fn();
     const item = render({
       onClick: mockCallback,
@@ -46,5 +46,6 @@ describe('Item', () => {
     item.simulate('click');
 
     expect(mockCallback).toHaveBeenCalledTimes(1);
+    expect(mockCallback).toHaveBeenCalledWith(initProps);
   });
 });

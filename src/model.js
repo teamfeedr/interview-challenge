@@ -6,6 +6,19 @@ const ItemModel = types.model({
   dietaries: types.array(types.string),
 });
 
-export const ItemsModel = types.model({
-  items: types.array(ItemModel),
-});
+const ItemsModel = types
+  .model({
+    items: types.array(ItemModel),
+    preview: types.array(types.number),
+  })
+  .actions(self => ({
+    addToPreview: (itemId) => {
+      if (self.preview.indexOf(itemId) !== -1) {
+        return;
+      }
+
+      self.preview.push(itemId);
+    }
+  }));
+
+export default ItemsModel;

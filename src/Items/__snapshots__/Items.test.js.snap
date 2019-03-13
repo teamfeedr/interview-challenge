@@ -10,16 +10,15 @@ exports[`Items should render correctly 1`] = `
     <Item
       dietaries={
         Array [
-          "v",
-          "ve",
-          "df",
           "gf",
-          "n!",
+          "df",
+          "rsf",
         ]
       }
-      id={1001}
-      key="1001"
-      name="Kale Caesar Pasta, Turmeric Satay Broccoli & Lemon Cashew Greens"
+      id={1002}
+      key="1002"
+      name="Hake & Smoky Chickpeas, Brown Rice & Quinoa, Roasted Roots"
+      onClick={[Function]}
     />
   </ul>
 </div>

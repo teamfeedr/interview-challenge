@@ -5,26 +5,7 @@ import { createRenderer } from '../test-utils';
 
 describe('Items', () => {
   let render;
-  const initProps = {
-    items: [
-      {
-        id: 1001,
-        name: 'Kale Caesar Pasta, Turmeric Satay Broccoli & Lemon Cashew Greens',
-        dietaries: ['v', 've', 'df', 'gf', 'n!'],
-      },
-    ],
-  };
-
-  beforeAll(() => {
-    render = createRenderer(Items, initProps);
-  });
-
-  it('should render correctly', () => {
-    expect(render()).toMatchSnapshot();
-  });
-
-  it('should render list of items from data prop and pass props to each', () => {
-    const mockItems = [
+  const mockItems = [
       {
         id: 1002,
         name: 'Hake & Smoky Chickpeas, Brown Rice & Quinoa, Roasted Roots',
@@ -46,6 +27,20 @@ describe('Items', () => {
         dietaries: ['gf', 'df'],
       },
     ];
+  const initProps = {
+    addToPreview: jest.fn(),
+    items: [mockItems[0]],
+  };
+
+  beforeAll(() => {
+    render = createRenderer(Items.wrappedComponent, initProps);
+  });
+
+  it('should render correctly', () => {
+    expect(render()).toMatchSnapshot();
+  });
+
+  it('should render list of items from data prop and pass props to each', () => {
     const component = render({
       items: mockItems,
     });
@@ -53,7 +48,22 @@ describe('Items', () => {
 
     expect(items).toHaveLength(mockItems.length);
     items.forEach((itemComponent, itemIndex) => {
-      expect(itemComponent.props()).toEqual(mockItems[itemIndex]);
+      expect(itemComponent.props()).toEqual({
+        ...mockItems[itemIndex],
+        onClick: component.instance().onItemClick,
+      });
     });
+  });
+
+  it('adds selected item to preview', () => {
+    const component = render({
+      items: mockItems,
+    });
+    const item = component.find('Item').first().dive();
+
+    item.simulate('click');
+
+    expect(initProps.addToPreview).toHaveBeenCalledTimes(1);
+    expect(initProps.addToPreview).toHaveBeenCalledWith(mockItems[0].id);
   });
 });

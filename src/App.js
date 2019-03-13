@@ -5,26 +5,11 @@ import './App.css';
 import Items from './Items';
 import Preview from './Preview';
 import SummaryHeader from './SummaryHeader';
-import { ItemsModel } from './model';
+import ItemsModel from './model';
+import data from './data';
 
 const itemsStore = ItemsModel.create({
-  items: [
-    {
-      id: 1002,
-      name: 'Hake & Smoky Chickpeas, Brown Rice & Quinoa, Roasted Roots',
-      dietaries: ['v', 've', 'rsfa'],
-    },
-    {
-      id: 1003,
-      name: 'Dill & Swiss Chard Potato Cakes, Summer Tabbouleh & Roasted Roots',
-      dietaries: ['v', 've'],
-    },
-    {
-      id: 1004,
-      name: 'Hake & Smoky Chickpeas, Herby Potatoes & Turmeric Satay Broccoli',
-      dietaries: ['rsf'],
-    },
-  ],
+  items: data,
 });
 
 export const App = () => (

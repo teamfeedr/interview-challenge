@@ -3,6 +3,7 @@
 exports[`Item should render correctly 1`] = `
 <li
   className="item"
+  onClick={[Function]}
 >
   <h2>
     Kale Caesar Pasta, Turmeric Satay Broccoli & Lemon Cashew Greens
