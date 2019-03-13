@@ -36,4 +36,15 @@ describe('Item', () => {
 
     expect(mockCallback).toHaveBeenCalledTimes(1);
   });
+
+  it('should call `onClick` callback prop when clicked', () => {
+    const mockCallback = jest.fn();
+    const item = render({
+      onClick: mockCallback,
+    });
+
+    item.simulate('click');
+
+    expect(mockCallback).toHaveBeenCalledTimes(1);
+  });
 });
