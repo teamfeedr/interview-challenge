@@ -12,4 +12,5 @@ I couldn't use Jest's `setupFiles` config because of create-react-app limitation
 I usually use `babel-plugin-proposal-class-properties` but skipped it so I don't waste time fiddling around with build configs
 
 Improvements:
-Could use `Array.prototype.reduce` to make the logic that counts the dietary types more functional
+- Could use `Array.prototype.reduce` to make the logic that counts the dietary types more functional
+- Would tidy up the folder structure a bit. For example, store model and App are not in separate folders.
