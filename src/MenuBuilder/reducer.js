@@ -6,7 +6,7 @@ export const initialState = {
   dietaries: {}
 };
 
-export const reducer = (state, action) => {
+export const reducer = (state, action = { type: '', payload: {} }) => {
   const id = action.payload.id;
   const hasItem = state.selectedIds[id];
 

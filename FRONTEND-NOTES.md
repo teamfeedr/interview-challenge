@@ -14,6 +14,7 @@ Notes:
 
 - I assume uniqueness in created menus
 - Should selected items be disabled or removed? (I guess hidden with drag and drop)
+- What should be the order of elements?
 
 Future improvements:
 

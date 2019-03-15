@@ -4,7 +4,7 @@ import SelectMenuItem from './SelectMenuItem';
 import MenuItem from './MenuItem';
 import { reducer, initialState } from './reducer';
 
-const MenuBuilder = ({ items }) => {
+const MenuBuilder = ({ items = [] }) => {
   const [state, dispatch] = useReducer(reducer, { ...initialState, items });
 
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import DieteriesList from './DieteriesList';
+import DieteriesList from './DietariesList';
 
 const MenuItem = ({ id, name, dietaries, remove = () => {} }) => (
   <li className="item">
