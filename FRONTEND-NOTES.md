@@ -1,6 +1,6 @@
 Name: Peter Kadlot
 Email: -
-Time to complete:
+Time to complete: ~2:10
 
 TODO:
 
