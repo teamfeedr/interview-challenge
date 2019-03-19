@@ -1,7 +1,7 @@
 # Fullstack Challenge (1-2hrs)
 
-An accounting system is needed where users can purchase 'credits' to order food (£1 = 1 credit) on specific days of the
-week (Mon-Fri).
+An accounting and commerce system is needed where users can purchase 'credits' to order food (£1 = 1 credit) on specific
+days of the week (Mon-Fri).
 
 Users credits can also be subsidised in any combination (or none) of the following ways:
 
@@ -9,10 +9,15 @@ Users credits can also be subsidised in any combination (or none) of the followi
 - A credit allowance per week.
 - A credit allowance per month.
 
-On any given day a user's balance should reflect the amount of credits they've purchased plus any subsidies they may
-have for that day. See the examples at the bottom of this doc for further context. 
+For any given day a user's balance should reflect `purchased credits + subsidy available - purchases for that day`.
+See the examples at the bottom of this doc for further context.
 
-Design a REST API and SQLdatabase schema which reflects the following spec:
+*You do not need to write any code for this challenge. Please treat it is a qualitative proposal and not an
+implementation.*
+Feel free to include code samples if you think they'll help but the presentation of your solution is just as important
+as your solution.
+
+Design a REST API and SQL database schema which reflects the following spec:
 
 Users can:
 
