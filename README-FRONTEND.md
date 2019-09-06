@@ -1,6 +1,4 @@
-# Frontend Challenge (1-2hrs)
-
-Please read this whole document before starting the challenge.
+# Frontend Challenge (~1hr)
 
 This app contains a static mock of an internal tool used to build sub-menus from a supplier's items.
 Users should be able to select items from the left-hand sidebar and have them appear in the Menu preview.
@@ -14,8 +12,7 @@ For this challenge we would like you to:
 - Show the total number of each dietary type selected in the header
 - Write sensible unit tests to validate your logic
 
-Please complete `FRONTEND-NOTES.md` with your details and any additional notes outlining your thought process.
-Enter as many notes as you like (or none at all!). These will be used to create talking points during your interview.
+Feel free to submit additional notes outlining your thought process. Provide as much detail as you like (or none at all!). These will be used to create talking points during your interview.
 
 We do not want you to:
 
@@ -24,8 +21,7 @@ We do not want you to:
 - Worry too much about browser compatibility or responsiveness
     - This is an internal tool used only on desktops. We will discuss these topics further in your interview.
 
-Using internal component state is fine but you're welcome to manage your state however you feel appropriate.
-Please justify your choice to (or not to) use internal component state in `FRONTEND-NOTES.md`.
+Using internal component state is fine but you're welcome to manage your state however you feel appropriate. Please justify your choice to use (or not to use) internal component state.
 
 We are looking for clean code with sensible component structure and data propagation.
 
