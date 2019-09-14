@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the Summary component renders with dietaryMap and selectedCount 1`] = `
+<div
+  className="menu-summary"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-6 menu-summary-left"
+      >
+        <span>
+          3
+           items
+        </span>
+      </div>
+      <div
+        className="col-6 menu-summary-right"
+      >
+        <span
+          key="vg"
+        >
+          2
+          x 
+          <DietaryIcon
+            diet="vg"
+          />
+        </span>
+        <span
+          key="gf"
+        >
+          1
+          x 
+          <DietaryIcon
+            diet="gf"
+          />
+        </span>
+        <span
+          key="v"
+        >
+          65
+          x 
+          <DietaryIcon
+            diet="v"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
