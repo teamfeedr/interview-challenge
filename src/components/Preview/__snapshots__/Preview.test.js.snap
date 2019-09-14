@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the Preview component renders with selectedItems 1`] = `
+<Fragment>
+  <h2>
+    Menu preview
+  </h2>
+  <ul
+    className="menu-preview"
+  >
+    <MenuItem
+      dietaries={
+        Array [
+          "v",
+          "vg",
+        ]
+      }
+      handleOnDeselect={[Function]}
+      id={1}
+      key="test1"
+      name="test1"
+    />
+    <MenuItem
+      dietaries={
+        Array [
+          "vg",
+          "gf",
+        ]
+      }
+      handleOnDeselect={[Function]}
+      id={2}
+      key="test2"
+      name="test2"
+    />
+  </ul>
+</Fragment>
+`;
