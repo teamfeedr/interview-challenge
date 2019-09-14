@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the Menu component renders with items 1`] = `
+<ul
+  className="item-picker"
+>
+  <MenuItem
+    dietaries={
+      Array [
+        "v",
+      ]
+    }
+    handleOnSelect={[Function]}
+    id={1}
+    key="test1"
+    name="test1"
+  />
+  <MenuItem
+    dietaries={
+      Array [
+        "vg",
+        "gf",
+      ]
+    }
+    handleOnSelect={[Function]}
+    id={2}
+    key="test2"
+    name="test2"
+  />
+</ul>
+`;
