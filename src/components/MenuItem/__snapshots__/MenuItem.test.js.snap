@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the MenuItem component renders with a list of dietaries 1`] = `
+<li
+  className="item"
+  key="1"
+>
+  <h2>
+    testName
+  </h2>
+  <p>
+    <DietaryIcon
+      diet="v"
+      key="v"
+    />
+    <DietaryIcon
+      diet="gf"
+      key="gf"
+    />
+  </p>
+</li>
+`;
+
+exports[`the MenuItem component renders with a remove button 1`] = `
+<li
+  className="item"
+  key="1"
+>
+  <h2>
+    testItem
+  </h2>
+  <p>
+    <DietaryIcon
+      diet="v"
+      key="v"
+    />
+    <DietaryIcon
+      diet="gf"
+      key="gf"
+    />
+  </p>
+  <button
+    className="remove-item"
+    onClick={[Function]}
+  >
+    x
+  </button>
+</li>
+`;
