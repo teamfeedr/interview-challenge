@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the WithDietaryMap HOC renders a wrapped component with a dietary Map 1`] = `
+<TestComponent
+  dietaryMap={
+    Map {
+      "v" => 8,
+      "ve" => 7,
+      "df" => 15,
+      "gf" => 19,
+      "n!" => 7,
+      "rsf" => 4,
+    }
+  }
+  selectedCount={20}
+/>
+`;
