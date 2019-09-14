@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the WithSelectHandler HOC renders a wrapped component with the handleItemSelect function prop 1`] = `
+<TestComponent
+  handleSelectItem={[Function]}
+/>
+`;
