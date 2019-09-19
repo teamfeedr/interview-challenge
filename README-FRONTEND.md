@@ -12,7 +12,7 @@ For this challenge we would like you to:
 - Show the total number of each dietary type selected in the header
 - Write sensible unit tests to validate your logic
 
-Feel free to submit additional notes outlining your thought process. Provide as much detail as you like (or none at all!). These will be used to create talking points during your interview.
+Feel free to add additional notes in `README.md` outlining your thought process. Provide as much detail as you like (or none at all!). These will be used to create talking points during your interview.
 
 We do not want you to:
 
