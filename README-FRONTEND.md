@@ -1,7 +1,9 @@
-# Frontend Challenge (~1hr)
+# Frontend Challenge 
 
 This app contains a static mock of an internal tool used to build sub-menus from a supplier's items.
 Users should be able to select items from the left-hand sidebar and have them appear in the Menu preview.
+
+## Part 1 - by yourself (~1hr)
 
 For this challenge we would like you to:
 
@@ -10,21 +12,25 @@ For this challenge we would like you to:
 - Be able to remove items from the menu by clicking the (x)
 - Show the total number of selected items in the header
 - Show the total number of each dietary type selected in the header
-- Write sensible unit tests to validate your logic
 
-Feel free to add additional notes in `README.md` outlining your thought process. Provide as much detail as you like (or none at all!). These will be used to create talking points during your interview.
+Please do any testing that you feel is necessary, and feel free to add additional notes in `README.md` outlining your thought process. Provide as much detail as you like (or none at all!). These will be used to create talking points during your interview.
 
 We do not want you to:
 
 - Overstyle the application. Please don't spend time writing a bunch of CSS.
 - Change the build configuration of the project
-- Worry too much about browser compatibility or responsiveness
-    - This is an internal tool used only on desktops. We will discuss these topics further in your interview.
-
-Using internal component state is fine but you're welcome to manage your state however you feel appropriate. Please justify your choice to use (or not to use) internal component state.
+- Worry too much about browser compatibility or responsiveness - this is an internal tool used only on desktops. 
 
 We are looking for clean code with sensible component structure and data propagation.
 
-If you have any issues please email lyz@feedr.co.
+## Part 2 - pairing with a Feedr developer (~1hr)
+
+We'll spend a little time reviewing the tech test, discussing the code and things that you think went well and that you might do differently.  
+
+We'll then take the code that you've already written and extend it to source data from an API. 
+
+
+
+If you have any issues please email mark@feedr.co.
 
 Good luck!
