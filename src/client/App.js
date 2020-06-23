@@ -20,8 +20,11 @@ export default () => (
     <div className="container menu-builder">
       <div className="row">
         <div className="col-4">
+          <div className="filters">
+            <input className="form-control" placeholder="Name" />
+          </div>
           <ul className="item-picker">
-          <li className="item">
+            <li className="item">
               <h2>Dummy item</h2>
               <p>
                 <span className="dietary">ve</span>
