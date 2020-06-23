@@ -18,17 +18,13 @@ Please do any testing that you feel is necessary, and feel free to add additiona
 We do not want you to:
 
 - Overstyle the application. Please don't spend time writing a bunch of CSS.
-- Change the build configuration of the project
 - Worry too much about browser compatibility or responsiveness - this is an internal tool used only on desktops. 
 
-We are looking for clean code with sensible component structure and data propagation.
+We are looking for clean code with sensible component structure and data propagation. 
 
 ## Part 2 - pairing with a Feedr developer (~1hr)
 
-We'll spend a little time reviewing the tech test, discussing the code and things that you think went well and that you might do differently.  
-
-We'll then take the code that you've already written and extend it to source data from an API. 
-
+We'll then take the code that you've already written and add a simple feature to extend it.
 
 
 If you have any issues please email mark@feedr.co.
