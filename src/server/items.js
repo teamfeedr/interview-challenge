@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   {
     id: 1001,
     name: 'Kale Caesar Pasta, Turmeric Satay Broccoli & Lemon Cashew Greens',

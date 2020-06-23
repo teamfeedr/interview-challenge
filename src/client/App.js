@@ -7,7 +7,7 @@ export default () => (
       <div className="container">
         <div className="row">
           <div className="col-6 menu-summary-left">
-            <span>5 items</span>
+            <span>6 items</span>
           </div>
           <div className="col-6 menu-summary-right">
             6x <span className="dietary">ve</span>
@@ -20,8 +20,11 @@ export default () => (
     <div className="container menu-builder">
       <div className="row">
         <div className="col-4">
+          <div className="filters">
+            <input className="form-control" placeholder="Name" />
+          </div>
           <ul className="item-picker">
-          <li className="item">
+            <li className="item">
               <h2>Dummy item</h2>
               <p>
                 <span className="dietary">ve</span>

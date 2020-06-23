@@ -1,34 +1,38 @@
 # Frontend Challenge 
 
-This app contains a static mock of an internal tool used to build sub-menus from a supplier's items.
-Users should be able to select items from the left-hand sidebar and have them appear in the Menu preview.
+This is a full stack app that contains:
+- on the front end, a static mock of an internal tool used to build sub-menus from a supplier's items
+- on the back end, a simple API endpoint that returns a list of items.
 
-## Part 1 - by yourself (~1hr)
+In a working version of the application, users should be able to select items from the left-hand sidebar and have them appear in the Menu preview.
+
+## Part 1 - by yourself (1-2hrs)
 
 For this challenge we would like you to:
 
-- Populate items in the left-hand sidebar with data from `items.js`.
+- Populate items in the left-hand sidebar with data from the /api/items endpoint.
 - Allow users to select items in the left-hand sidebar and have them appear in the Menu Preview on the right hand side.
+- Allow users to filter items in the left-hand sidebar by name.
 - Be able to remove items from the menu by clicking the (x)
 - Show the total number of selected items in the header
 - Show the total number of each dietary type selected in the header
 
-Please do any testing that you feel is necessary, and feel free to add additional notes in `README.md` outlining your thought process. Provide as much detail as you like (or none at all!). These will be used to create talking points during your interview.
+We are looking for: 
+- clean code
+- sensible component structure and data management 
+- sensible testing plan - we like tests, but we like *useful* tests 
 
 We do not want you to:
 
 - Overstyle the application. Please don't spend time writing a bunch of CSS.
-- Change the build configuration of the project
 - Worry too much about browser compatibility or responsiveness - this is an internal tool used only on desktops. 
 
-We are looking for clean code with sensible component structure and data propagation.
+Please feel free to add additional notes in `README.md` outlining your thought process. Provide as much detail as you like (or none at all!). These will be used to create talking points during your interview.
+
 
 ## Part 2 - pairing with a Feedr developer (~1hr)
 
-We'll spend a little time reviewing the tech test, discussing the code and things that you think went well and that you might do differently.  
-
-We'll then take the code that you've already written and extend it to source data from an API. 
-
+We'll then take the code that you've already written and add a simple feature to extend it.
 
 
 If you have any issues please email mark@feedr.co.

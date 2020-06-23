@@ -35,6 +35,20 @@
   margin: 50px 0;
 }
 
+.filters {
+  background: #F8F8F8;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+.filters .form-control {
+  border: 1px solid #C1C1C1;
+  padding: 8px;
+  width: 294px;
+}
+
+
 .item-picker {
   background: #F8F8F8;
   padding: 20px;
