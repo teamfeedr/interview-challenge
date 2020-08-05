@@ -2,7 +2,7 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import App from './App'
 
-// You can remove this test
+// Example test
 describe('App tests', () => {
     it('renders a message', () => {
         render(<App />)
