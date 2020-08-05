@@ -12,7 +12,7 @@ For this challenge we would like you to:
 
 - Populate items in the left-hand sidebar with data from the /api/items endpoint.
 - Allow users to select items in the left-hand sidebar and have them appear in the Menu Preview on the right hand side.
-- Allow users to filter items in the left-hand sidebar by name. We prefer this to be done on the server.
+- Allow users to filter items in the left-hand sidebar by name. You can modify the server code.
 - Be able to remove items from the menu by clicking the (x)
 - Show the total number of selected items in the header
 - Show the total number of each dietary type selected in the header
