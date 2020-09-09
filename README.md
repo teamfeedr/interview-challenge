@@ -1,23 +1,10 @@
 # Feedr Technical Challenge
 
-Thank you for taking the time to attempt this challenge.
+Have to say this was a fun test!  
 
-These tests are used to evaluate candidates of all skill levels so please complete them to a level you feel is an accurate representation of your skill set.
+Had to update the babelrc file as I was getting an error with my custom hook. [issue](https://github.com/babel/babel/issues/8829) 
 
-Please read `README-FRONTEND.md` for further instructions.
+There must be a better way to handle the dietary array than my implementation.
 
-If you have any questions or would like to clarify any details, please email lyz@feedr.co.
+Got the coverage up to 75%.
 
-Good luck!
-
-# Quick Start
-Fork the repository, clone it to your local system, then:
-
-## Install dependencies
-yarn (or npm install)
-
-## Start development server
-yarn dev (or npm run dev)
-
-## Run tests
-yarn test (or npm run test)

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main test renders 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="menu-summary"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col-6 menu-summary-left"
+          >
+            <span>
+              0
+               items
+            </span>
+          </div>
+          <div
+            class="col-6 menu-summary-right"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="container menu-builder"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-4"
+        >
+          <div
+            class="filters"
+          >
+            <input
+              class="form-control"
+              data-testid="input-test"
+              placeholder="Name"
+            />
+          </div>
+          <ul
+            class="item-picker"
+            data-testid="list-test"
+          />
+        </div>
+        <div
+          class="col-8"
+        >
+          <h2>
+             
+            Menu preview
+             
+          </h2>
+          <ul
+            class="menu-preview"
+            data-testid="list-test"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

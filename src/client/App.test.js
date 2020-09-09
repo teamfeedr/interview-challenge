@@ -6,6 +6,6 @@ import App from './App'
 describe('App tests', () => {
     it('renders a message', () => {
         render(<App />)
-        expect(screen.getByText('6 items')).toBeInTheDocument()
+        expect(screen.getByText('Menu preview')).toBeInTheDocument()
     })
 })

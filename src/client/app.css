@@ -35,6 +35,12 @@
   margin: 50px 0;
 }
 
+.loading-spinner{
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
 .filters {
   background: #F8F8F8;
   padding: 20px;
@@ -48,6 +54,10 @@
   width: 294px;
 }
 
+.error{
+  color: #f11b1b;
+  padding: 20px 20px 0;
+}
 
 .item-picker {
   background: #F8F8F8;
