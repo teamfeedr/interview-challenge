@@ -1,129 +1,61 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useFetch } from 'use-http';
+
+import ItemPicker from './ItemPicker';
+import MenuPreview from './MenuPreview';
+import MenuSummary from './MenuSummary';
+
 import './App.css';
 
-export default () => (
-  <div className="wrapper">
-    <div className="menu-summary">
-      <div className="container">
+export default () => {
+  const { get, loading, error } = useFetch();
+
+  const [items, setItems] = useState([])
+  const [selectedIds, setSelectedIds] = useState([]);
+
+  useEffect(() => {
+    get('/api/items').then((data) => {
+      setItems(data?.items);
+    });
+  }, []);
+
+  const selectItem = (itemId) => setSelectedIds(selectedIds.concat(itemId));
+
+  const removeItem = (itemId) => {
+    setSelectedIds(selectedIds.filter((id) => id !== itemId));
+  };
+
+  const selectedItems = items.filter((item) => selectedIds.includes(item.id))
+
+  if (loading) {
+    return 'Loading...';
+  }
+
+  if (error) {
+    return 'Something went wrong, please try reloading.';
+  }
+
+  return (
+    <div className="wrapper">
+      <MenuSummary selectedItems={selectedItems} />
+      <div className="container menu-builder">
         <div className="row">
-          <div className="col-6 menu-summary-left">
-            <span>6 items</span>
+          <div className="col-4">
+            <ItemPicker
+              items={items}
+              selectItem={selectItem}
+              selectedItems={selectedIds}
+            />
           </div>
-          <div className="col-6 menu-summary-right">
-            6x <span className="dietary">ve</span>
-            4x <span className="dietary">v</span>
-            12x <span className="dietary">n!</span>
+          <div className="col-8">
+            <h2>Menu preview</h2>
+            <MenuPreview
+              items={selectedItems}
+              removeItem={removeItem}
+            />
           </div>
         </div>
       </div>
     </div>
-    <div className="container menu-builder">
-      <div className="row">
-        <div className="col-4">
-          <div className="filters">
-            <input className="form-control" placeholder="Name" />
-          </div>
-          <ul className="item-picker">
-            <li className="item">
-              <h2>Dummy item</h2>
-              <p>
-                <span className="dietary">ve</span>
-                <span className="dietary">v</span>
-                <span className="dietary">n!</span>
-              </p>
-            </li>
-            <li className="item">
-              <h2>Dummy item</h2>
-              <p>
-                <span className="dietary">ve</span>
-                <span className="dietary">v</span>
-                <span className="dietary">n!</span>
-              </p>
-            </li>
-            <li className="item">
-              <h2>Dummy item</h2>
-              <p>
-                <span className="dietary">ve</span>
-                <span className="dietary">v</span>
-                <span className="dietary">n!</span>
-              </p>
-            </li>
-            <li className="item">
-              <h2>Dummy item</h2>
-              <p>
-                <span className="dietary">ve</span>
-                <span className="dietary">v</span>
-                <span className="dietary">n!</span>
-              </p>
-            </li>
-            <li className="item">
-              <h2>Dummy item</h2>
-              <p>
-                <span className="dietary">ve</span>
-                <span className="dietary">v</span>
-                <span className="dietary">n!</span>
-              </p>
-            </li>
-            <li className="item">
-              <h2>Dummy item</h2>
-              <p>
-                <span className="dietary">ve</span>
-                <span className="dietary">v</span>
-                <span className="dietary">n!</span>
-              </p>
-            </li>
-            <li className="item">
-              <h2>Dummy item</h2>
-              <p>
-                <span className="dietary">ve</span>
-                <span className="dietary">v</span>
-                <span className="dietary">n!</span>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div className="col-8">
-          <h2>Menu preview</h2>
-          <ul className="menu-preview">
-            <li className="item">
-              <h2>Dummy item</h2>
-              <p>
-                <span className="dietary">ve</span>
-                <span className="dietary">v</span>
-                <span className="dietary">n!</span>
-              </p>
-              <button className="remove-item">x</button>
-            </li>
-            <li className="item">
-              <h2>Dummy item</h2>
-              <p>
-                <span className="dietary">ve</span>
-                <span className="dietary">v</span>
-                <span className="dietary">n!</span>
-              </p>
-              <button className="remove-item">x</button>
-            </li>
-            <li className="item">
-              <h2>Dummy item</h2>
-              <p>
-                <span className="dietary">ve</span>
-                <span className="dietary">v</span>
-                <span className="dietary">n!</span>
-              </p>
-              <button className="remove-item">x</button>
-            </li>
-            <li className="item">
-              <h2>Dummy item</h2>
-              <p>
-                <span className="dietary">ve</span>
-                <span className="dietary">v</span>
-                <span className="dietary">n!</span>
-              </p>
-              <button className="remove-item">x</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+  );
+};
