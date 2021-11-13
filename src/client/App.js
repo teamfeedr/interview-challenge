@@ -46,7 +46,7 @@ export default () => {
   const filterItems = (e) => {
     const searchedItems = items;
     const temp = searchedItems.filter((el) => {
-      return el.name.includes(e.target.value);
+      return el.name.toLowerCase().includes(e.target.value.toLowerCase());
     });
     setFilteredItems(temp);
   };
