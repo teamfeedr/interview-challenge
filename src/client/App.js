@@ -29,7 +29,7 @@ export default () => {
   const addToMenu = (item) => {
     menuItems.includes(item) || setMenuItems([...menuItems, item]);
     const prevState = dietaries;
-    item.dietaries.forEach((el) => {
+    menuItems.includes(item) || item.dietaries.forEach((el) => {
       prevState[el]++;
     });
     setDietaries(prevState);
