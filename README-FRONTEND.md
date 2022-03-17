@@ -35,6 +35,6 @@ Please feel free to add additional notes in `README.md` outlining your thought p
 We'll then take the code that you've already written and add a simple feature to extend it.
 
 
-If you have any issues please email mark@feedr.co.
+If you have any issues please email nick@feedr.co.
 
 Good luck!
