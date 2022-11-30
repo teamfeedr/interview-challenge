@@ -74,6 +74,15 @@ li.item {
   position: relative;
 }
 
+li.item.clickable {
+  cursor: pointer;
+}
+
+li.item.disabled {
+  background: #CCC;
+  cursor: not-allowed;
+}
+
 li.item h2 {
   font-size: 12pt;
 }
