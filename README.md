@@ -6,7 +6,7 @@ These tests are used to evaluate candidates of all skill levels so please comple
 
 Please read `README-FRONTEND.md` for further instructions.
 
-If you have any questions or would like to clarify any details, please email nick@feedr.co.
+If you have any questions or would like to clarify any details, please email richard.stevens@feedr.co.
 
 Good luck!
 
